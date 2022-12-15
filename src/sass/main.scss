@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.no-js .owl-carousel {
+	display: block;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+@import 'blocks/*.scss';
