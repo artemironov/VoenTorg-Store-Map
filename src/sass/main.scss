@@ -8,9 +8,25 @@
 	display: block;
 }
 
+@font-face {
+    font-family: "TTSquaresCondensed-Thin";
+    src: url("../fonts/TypeType - TTSquaresCondensed-Thin.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("../fonts/TypeType - TTSquaresCondensed-Thin.woff") format("woff");
+}
+
+@font-face {
+    font-family: "TTSquaresCondensed-Bold";
+    src: url("../fonts/TypeType - TTSquaresCondensed-Bold.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("../fonts/TypeType - TTSquaresCondensed-Bold.woff") format("woff");
+}
+
 body {
     width: 100vw;
     height: 100vh;
+    font: 21px/38px "TTSquaresCondensed-Thin", Arial, sans-serif;
+    color: #5d5d5d;
 }
 
 @import 'blocks/*.scss';
