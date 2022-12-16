@@ -12,6 +12,11 @@
     background: #dbdbdb;
 }
 
+.modal#store-8, .modal#store-9, .modal#store-10, .modal#store-11, .modal#store-12, .modal#store-13, .modal#store-14 {
+    right: 30%;
+    left: 0;
+}
+
 .modal.fade .modal-dialog {
 	-webkit-transition: opacity .3s ease-out, -webkit-transform .3s ease-out;
     transition: opacity .3s ease-out, -webkit-transform .3s ease-out;
@@ -53,6 +58,11 @@
     background: transparent;
     border-radius: 0;
     border: none;
+}
+
+.modal#store-8 .modal-close, .modal#store-9 .modal-close, .modal#store-10 .modal-close, .modal#store-11 .modal-close, .modal#store-12 .modal-close, .modal#store-13 .modal-close, .modal#store-14 .modal-close {
+    right: 35px;
+    left: auto;
 }
   
 .modal-backdrop {
@@ -123,5 +133,17 @@
         display: block;
         object-fit: cover;
     }
+    &__tbo-text {
+        margin-bottom: 40px;
+        font: 21px/38px "TTSquaresCondensed-Thin", Arial, sans-serif;
+    }
+    &__tbo-number {
+        margin-bottom: 40px;
+        font: 21px/38px "TTSquaresCondensed-Bold", Arial, sans-serif;
+    }
+}
+
+.modal#store-8 .modal-content, .modal#store-9 .modal-content, .modal#store-10 .modal-content, .modal#store-11 .modal-content, .modal#store-12 .modal-content, .modal#store-13 .modal-content, .modal#store-14 .modal-content {
+    flex-direction: row-reverse;
 }
 

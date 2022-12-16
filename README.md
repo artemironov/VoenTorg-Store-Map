@@ -1,1 +1,1 @@
-Clothing collection Slider for VoenTorg (Russian Army)
+Store Map for VoenTorg (Russian Army)
