@@ -3,6 +3,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  cursor: none;
+}
+
+*:active,
+*:focus {
+  outline: none;
 }
 
 .no-js .owl-carousel {
@@ -229,6 +235,18 @@ body {
   color: #fff;
 }
 
+.map__store.active {
+  background: url(../img/map__store-active.png) no-repeat center/contain;
+}
+
+.map__store.store-green.active {
+  background: url(../img/map__store-active-green.png) no-repeat center/contain;
+}
+
+.map__store.store-world.active {
+  background: url(../img/map__store-active-world.png) no-repeat top left/contain;
+}
+
 .store-one {
   top: 32.962962963%;
   left: 14.1145833333%;
@@ -432,5 +450,17 @@ body {
 @supports (-webkit-appearance:none) {
   .map {
     background-image: url(../img/map3.webp);
+  }
+
+  .map__store.active {
+    background-image: url(../img/map__store-active.webp);
+  }
+
+  .map__store.store-green.active {
+    background-image: url(../img/map__store-active-green.webp);
+  }
+
+  .map__store.store-world.active {
+    background-image: url(../img/map__store-active-world.webp);
   }
 }

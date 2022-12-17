@@ -22,6 +22,9 @@ $(document).ready(function(){
     
     $(document).on('click', '.map__store', function(e){
         var $win = $( $(this).data('target') );
+        $(".map__store").removeClass("active");
+        $(this).addClass("active");
+
         if($(".modal").is(":visible")) {
             //$(".modal").modal('toggle');
             $('.modal').modal('hide').data('bs.modal', null);
@@ -33,6 +36,10 @@ $(document).ready(function(){
                 backdrop: false
             });
         }
+    });
+
+    $(document).on('click', '.modal-close', function(e){
+        $(".map__store").removeClass("active");
     });
 
 });

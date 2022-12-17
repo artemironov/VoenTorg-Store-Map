@@ -16,7 +16,24 @@
         background: transparent;
         color: #fff;
     }
-    
+    &__store.active {
+        background-image: url(../img/map__store-active.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    &__store.store-green.active {
+        background-image: url(../img/map__store-active-green.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    &__store.store-world.active {
+        background-image: url(../img/map__store-active-world.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top left;
+    }
 }
 
 .store-one {
