@@ -1,8 +1,10 @@
+@use "sass:math";
+
 .map {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/map3.jpg);
+    background-image: url(../img/map1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,8 +13,8 @@
         display: block;
         top: 50%;
         left: 50%;
-        width: 24px / 1920px * 100%;
-        height: 21px / 1080px * 100%;
+        width: math.div(24px, 1920px) * 100%;
+        height: math.div(21px, 1080px) * 100%;
         background: transparent;
         color: #fff;
     }
@@ -29,7 +31,7 @@
         background-position: center;
     }
     &__store.store-world.active {
-        background-image: url(../img/map__store-active-world.png);
+        background-image: url(../img/map__store-active-world1.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: top left;
@@ -37,20 +39,20 @@
 }
 
 .store-one {
-    top: 356px / 1080px * 100%;
-    left: 271px / 1920px * 100%;
-    width: 44px / 1920px * 100%;
-    height: 41px / 1080px * 100%;
+    top: math.div(356px, 1080px) * 100%;
+    left: math.div(271px, 1920px) * 100%;
+    width: math.div(44px, 1920px) * 100%;
+    height: math.div(41px, 1080px) * 100%;
 }
 
 .store-sec {
-    width: 34px / 1920px * 100%;
-    height: 33px / 1080px * 100%;
+    width: math.div(34px, 1920px) * 100%;
+    height: math.div(33px, 1080px) * 100%;
 }
 
 .store-world {
-    width: 450px / 1920px * 100%;
-    height: 59px / 1080px * 100%;
+    width: math.div(450px, 1920px) * 100%;
+    height: math.div(46px, 1080px) * 100%;
 }
 
 .st-world {
@@ -62,173 +64,178 @@
 }
 
 .store-2 {
-    top: 215px / 1080px * 100%;
-    left: 279px / 1920px * 100%;
+    top: math.div(215px, 1080px) * 100%;
+    left: math.div(279px, 1920px) * 100%;
 }
 
 .store-3 {
-    top: 220px / 1080px * 100%;
-    left: 317px / 1920px * 100%;
+    top: math.div(220px, 1080px) * 100%;
+    left: math.div(317px, 1920px) * 100%;
 }
 
 .store-4 {
-    top: 356px / 1080px * 100%;
-    left: 320px / 1920px * 100%;
+    top: math.div(356px, 1080px) * 100%;
+    left: math.div(320px, 1920px) * 100%;
 }
 
 .store-5 {
-    top: 385px / 1080px * 100%;
-    left: 320px / 1920px * 100%;
+    top: math.div(385px, 1080px) * 100%;
+    left: math.div(320px, 1920px) * 100%;
 }
 
 .store-6 {
-    top: 529px / 1080px * 100%;
-    left: 174px / 1920px * 100%;
+    top: math.div(529px, 1080px) * 100%;
+    left: math.div(174px, 1920px) * 100%;
 }
 
 .store-7 {
-    top: 540px / 1080px * 100%;
-    left: 625px / 1920px * 100%;
+    top: math.div(540px, 1080px) * 100%;
+    left: math.div(625px, 1920px) * 100%;
 }
 
 .store-8 {
-    top: 748px / 1080px * 100%;
-    left: 1629px / 1920px * 100%;
+    top: math.div(748px, 1080px) * 100%;
+    left: math.div(1629px, 1920px) * 100%;
 }
 
 .store-9 {
-    top: 744px / 1080px * 100%;
-    left: 1590px / 1920px * 100%;
+    top: math.div(744px, 1080px) * 100%;
+    left: math.div(1590px, 1920px) * 100%;
 }
 
 .store-10 {
-    top: 844px / 1080px * 100%;
-    left: 1616px / 1920px * 100%;
+    top: math.div(844px, 1080px) * 100%;
+    left: math.div(1616px, 1920px) * 100%;
 }
 
 .store-11 {
-    top: 883px / 1080px * 100%;
-    left: 1600px / 1920px * 100%;
+    top: math.div(883px, 1080px) * 100%;
+    left: math.div(1600px, 1920px) * 100%;
 }
 
 .store-12 {
-    top: 819px / 1080px * 100%;
-    left: 1186px / 1920px * 100%;
+    top: math.div(819px, 1080px) * 100%;
+    left: math.div(1186px, 1920px) * 100%;
 }
 
 .store-13 {
-    top: 798px / 1080px * 100%;
-    left: 1102px / 1920px * 100%;
+    top: math.div(798px, 1080px) * 100%;
+    left: math.div(1102px, 1920px) * 100%;
 }
 
 .store-14 {
-    top: 823px / 1080px * 100%;
-    left: 971px / 1920px * 100%;
+    top: math.div(823px, 1080px) * 100%;
+    left: math.div(971px, 1920px) * 100%;
 }
 
 .store-15 {
-    top: 798px / 1080px * 100%;
-    left: 847px / 1920px * 100%;
+    top: math.div(798px, 1080px) * 100%;
+    left: math.div(847px, 1920px) * 100%;
 }
 
 .store-16 {
-    top: 714px / 1080px * 100%;
-    left: 815px / 1920px * 100%;
+    top: math.div(714px, 1080px) * 100%;
+    left: math.div(815px, 1920px) * 100%;
 }
 
 .store-17 {
-    top: 699px / 1080px * 100%;
-    left: 134px / 1920px * 100%;
+    top: math.div(699px, 1080px) * 100%;
+    left: math.div(134px, 1920px) * 100%;
 }
 
 .store-18 {
-    top: 655px / 1080px * 100%;
-    left: 161px / 1920px * 100%;
+    top: math.div(655px, 1080px) * 100%;
+    left: math.div(161px, 1920px) * 100%;
 }
 
 .store-19 {
-    top: 644px / 1080px * 100%;
-    left: 202px / 1920px * 100%;
+    top: math.div(644px, 1080px) * 100%;
+    left: math.div(202px, 1920px) * 100%;
 }
 
 .store-20 {
-    top: 614px / 1080px * 100%;
-    left: 149px / 1920px * 100%;
+    top: math.div(614px, 1080px) * 100%;
+    left: math.div(149px, 1920px) * 100%;
 }
 
 .store-21 {
-    top: 595px / 1080px * 100%;
-    left: 112px / 1920px * 100%;
+    top: math.div(595px, 1080px) * 100%;
+    left: math.div(112px, 1920px) * 100%;
 }
 
 .store-22 {
-    top: 540px / 1080px * 100%;
-    left: 73px / 1920px * 100%;
+    top: math.div(540px, 1080px) * 100%;
+    left: math.div(73px, 1920px) * 100%;
 }
 
 .store-23 {
-    top: 484px / 1080px * 100%;
-    left: 28px / 1920px * 100%;
+    top: math.div(484px, 1080px) * 100%;
+    left: math.div(28px, 1920px) * 100%;
 }
 
 .store-24 {
-    top: 474px / 1080px * 100%;
-    left: 49px / 1920px * 100%;
+    top: math.div(474px, 1080px) * 100%;
+    left: math.div(49px, 1920px) * 100%;
 }
 
 .store-25 {
-    top: 529px / 1080px * 100%;
-    left: 149px / 1920px * 100%;
+    top: math.div(529px, 1080px) * 100%;
+    left: math.div(149px, 1920px) * 100%;
 }
 
 .store-26 {
-    top: 504px / 1080px * 100%;
-    left: 226px / 1920px * 100%;
+    top: math.div(504px, 1080px) * 100%;
+    left: math.div(226px, 1920px) * 100%;
 }
 
 .store-27 {
-    top: 475px / 1080px * 100%;
-    left: 281px / 1920px * 100%;
+    top: math.div(475px, 1080px) * 100%;
+    left: math.div(281px, 1920px) * 100%;
 }
 
 .store-28 {
-    top: 450px / 1080px * 100%;
-    left: 368px / 1920px * 100%;
+    top: math.div(450px, 1080px) * 100%;
+    left: math.div(368px, 1920px) * 100%;
 }
 
 .store-29 {
-    top: 374px / 1080px * 100%;
-    left: 442px / 1920px * 100%;
+    top: math.div(374px, 1080px) * 100%;
+    left: math.div(442px, 1920px) * 100%;
 }
 
 .store-30 {
-    top: 345px / 1080px * 100%;
-    left: 368px / 1920px * 100%;
+    top: math.div(345px, 1080px) * 100%;
+    left: math.div(368px, 1920px) * 100%;
 }
 
 .store-31 {
-    top: 368px / 1080px * 100%;
-    left: 244px / 1920px * 100%;
+    top: math.div(368px, 1080px) * 100%;
+    left: math.div(244px, 1920px) * 100%;
 }
 
 .store-32 {
-    top: 395px / 1080px * 100%;
-    left: 260px / 1920px * 100%;
+    top: math.div(395px, 1080px) * 100%;
+    left: math.div(260px, 1920px) * 100%;
 }
 
 .store-33 {
-    top: 435px / 1080px * 100%;
-    left: 266px / 1920px * 100%;
+    top: math.div(435px, 1080px) * 100%;
+    left: math.div(266px, 1920px) * 100%;
 }
 
 .store-34 {
-    top: 172px / 1080px * 100%;
-    left: 124px / 1920px * 100%;
+    top: math.div(172px, 1080px) * 100%;
+    left: math.div(124px, 1920px) * 100%;
 }
 
 .store-35 {
-    top: 34px / 1080px * 100%;
-    left: 46px / 1920px * 100%;
+    top: math.div(979px, 1080px) * 100%;
+    left: math.div(52px, 1920px) * 100%;
+}
+
+.store-36 {
+    top: math.div(336px, 1080px) * 100%;
+    left: math.div(263px, 1920px) * 100%;
 }
 
 
