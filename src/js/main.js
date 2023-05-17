@@ -19,7 +19,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 
 
 $(document).ready(function(){
-    
+
     $(document).on('click', '.map__store', function(e){
         var $win = $( $(this).data('target') );
         $(".map__store").removeClass("active");
