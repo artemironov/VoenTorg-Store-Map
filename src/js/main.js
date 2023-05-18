@@ -29,11 +29,11 @@ $(document).ready(function(){
             //$(".modal").modal('toggle');
             $('.modal').modal('hide').data('bs.modal', null);
             $win.modal({
-                backdrop: false
+                backdrop: true
             });
         } else {
             $win.modal({
-                backdrop: false
+                backdrop: true
             });
         }
     });
@@ -41,5 +41,13 @@ $(document).ready(function(){
     $(document).on('click', '.modal-close', function(e){
         $(".map__store").removeClass("active");
     });
+
+    $(document).on('click', '.modal-backdrop', function(e){
+        $(".map__store").removeClass("active");
+        $('.modal').modal('hide').data('bs.modal', null);
+    });
+
+
+    $("body").on("contextmenu", false);
 
 });
