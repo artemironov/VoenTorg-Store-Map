@@ -30,7 +30,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  font: 21px/38px "TTSquaresCondensed-Thin", Arial, sans-serif;
+  font: 14px/17px "TTSquaresCondensed-Thin", Arial, sans-serif;
   color: #5d5d5d;
 }
 
@@ -40,7 +40,7 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 30%;
+  left: 25%;
   display: none;
   -webkit-overflow-scrolling: touch;
   outline: 0;
@@ -55,7 +55,7 @@ body {
 .modal#store-12,
 .modal#store-13,
 .modal#store-14 {
-  right: 30%;
+  right: 25%;
   left: 0;
 }
 
@@ -89,11 +89,11 @@ body {
 
 .modal-close {
   position: absolute;
-  top: 7px;
-  left: 35px;
+  top: 0;
+  left: 15px;
   width: 34px;
   height: 34px;
-  font-size: 70px;
+  font-size: 40px;
   font-weight: 600;
   color: #bebebe;
   cursor: pointer;
@@ -155,27 +155,33 @@ body {
   height: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-top: 60px;
-  padding-left: 40px;
-  padding-right: 13px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 10px;
 }
 
 .modal-content__title {
-  margin-bottom: 45px;
-  font: 29px/38px "TTSquaresCondensed-Bold", Arial, sans-serif;
+  margin-bottom: 15px;
+  font: 18px/23px "TTSquaresCondensed-Bold", Arial, sans-serif;
   text-transform: uppercase;
 }
 
 .modal-content__store {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .modal-content__address {
-  font: 21px/38px "TTSquaresCondensed-Bold", Arial, sans-serif;
+  margin-bottom: 6px;
+  font: 17px/21px "TTSquaresCondensed-Bold", Arial, sans-serif;
 }
 
 .modal-content__description {
-  font: 17px/25px "TTSquaresCondensed-Thin", Arial, sans-serif;
+  margin-top: 5px;
+  font: 14px/17px "TTSquaresCondensed-Thin", Arial, sans-serif;
+}
+
+.modal-content__tel {
+  margin-bottom: 6px;
 }
 
 .modal-content__right {
@@ -186,24 +192,31 @@ body {
   overflow: hidden;
 }
 
-.modal-content__right picture,
-.modal-content__right img {
+.modal-content__right picture {
   position: absolute;
   right: 0;
   top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content__right img {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: block;
-  -o-object-fit: cover;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .modal-content__tbo-text {
-  margin-bottom: 40px;
-  font: 21px/38px "TTSquaresCondensed-Thin", Arial, sans-serif;
+  margin-bottom: 20px;
+  font: 14px/17px "TTSquaresCondensed-Thin", Arial, sans-serif;
 }
 
 .modal-content__tbo-number {
-  margin-bottom: 40px;
-  font: 21px/38px "TTSquaresCondensed-Bold", Arial, sans-serif;
+  margin-bottom: 20px;
+  font: 14px/17px "TTSquaresCondensed-Bold", Arial, sans-serif;
 }
 
 .modal#store-8 .modal-content,
@@ -267,7 +280,7 @@ body {
 }
 
 .st-world {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .st-world:last-child {
@@ -470,4 +483,91 @@ body {
   .map__store.store-world.active {
     background-image: url(../img/map__store-active-world1.webp);
   }
+}
+
+@media screen and (min-width: 1920px) {
+  .modal-close {
+    top: 7px;
+    left: 35px;
+    font-size: 70px;
+  }
+
+  .modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    outline: 0;
+    background: #dbdbdb;
+    border-radius: 0;
+  }
+
+  .modal-content__left {
+    width: 40%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 13px;
+  }
+
+  .modal-content__title {
+    margin-bottom: 45px;
+    font: 29px/38px "TTSquaresCondensed-Bold", Arial, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .modal-content__store {
+    margin-bottom: 40px;
+  }
+
+  .modal-content__address {
+    font: 21px/38px "TTSquaresCondensed-Bold", Arial, sans-serif;
+  }
+
+  .modal-content__description {
+    font: 17px/25px "TTSquaresCondensed-Thin", Arial, sans-serif;
+  }
+
+  .modal-content__right {
+    position: relative;
+    display: block;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .modal-content__right picture,
+  .modal-content__right img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .modal-content__tbo-text {
+    margin-bottom: 40px;
+    font: 21px/38px "TTSquaresCondensed-Thin", Arial, sans-serif;
+  }
+
+  .modal-content__tbo-number {
+    margin-bottom: 40px;
+    font: 21px/38px "TTSquaresCondensed-Bold", Arial, sans-serif;
+  }
+
+  .st-world {
+    margin-bottom: 100px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
 }
